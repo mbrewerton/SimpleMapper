@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMapper", "SimpleMapper\SimpleMapper.csproj", "{11A3E332-7C79-43A8-964E-7F5147EC29B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMapper.Tests", "SimpleMapper.Tests\SimpleMapper.Tests.csproj", "{C0BA11FE-075A-4739-A8D1-5A85FB5F08A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMapper.Benchmarks", "SimpleMapper.Benchmarks\SimpleMapper.Benchmarks.csproj", "{61E9F604-F461-4AEB-9710-53CC9CD5ADDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11A3E332-7C79-43A8-964E-7F5147EC29B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A3E332-7C79-43A8-964E-7F5147EC29B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A3E332-7C79-43A8-964E-7F5147EC29B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A3E332-7C79-43A8-964E-7F5147EC29B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BA11FE-075A-4739-A8D1-5A85FB5F08A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BA11FE-075A-4739-A8D1-5A85FB5F08A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BA11FE-075A-4739-A8D1-5A85FB5F08A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BA11FE-075A-4739-A8D1-5A85FB5F08A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E9F604-F461-4AEB-9710-53CC9CD5ADDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E9F604-F461-4AEB-9710-53CC9CD5ADDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E9F604-F461-4AEB-9710-53CC9CD5ADDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E9F604-F461-4AEB-9710-53CC9CD5ADDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
