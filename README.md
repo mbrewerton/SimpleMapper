@@ -46,7 +46,7 @@ public void MapPerson()
         Id = 1,
         FirstName = "Matt",
         LastName = "Brewerton"
-    }
+    };
     
     var output = model.Map<Person, PersonDto>(
         (person, dto) => {
@@ -115,7 +115,7 @@ public void MapPerson()
             FirstName = "Chris
             LastName = "Hodges"
         }
-    }
+    };
     
     var output = model.MapCollection<Person, PersonDto>(
         (person, dto) => {
