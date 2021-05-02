@@ -1,2 +1,56 @@
 # SimpleMapper
-A simple object mapper for mapping C# classes
+
+SimpleMapper is a simple object mapper for mapping C# objects between classes. It's designed to be extremely easy and fast to use with customisation on additional mapping. It will automatically map properties with a matching name and type. If the type is different, it will not map the properties - these will need to be done as a custom Action in the `additionalMappings` params.
+
+SimpleMapper uses an internal memory cache to help speed up subsequent mappings of the same class combinations.
+
+## How to Use
+
+### Map<TInput, TOutput>()
+
+The `Map` method is used for mapping a single object between two C# classes.
+
+#### Example 1 - Basic Mapping:
+
+```c#
+var model = new SimpleModel
+    {
+        Id = 1,
+        Date = DateTime.Now,
+        Decimal = 1,
+        Name = "Item 1"
+    };
+var output = model.Map<SimpleModel, SimpleOutput>(); // output is typeof SimpleOutput
+```
+
+#### Example 2: Basic Mapping with Custom Map
+```c#
+class Person
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+}
+
+class PersonDto
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+}
+
+public void MapPerson()
+{
+    var model = new Person
+        {
+            Id = 1,
+            FirstName = "Matt",
+            LastName = "Brewerton"
+        }
+    var output = model.Map<Person, PersonDto>(
+        (person, dto) => {
+            // Perform your mapping in Actions. You can pass multiple Actions to the params which run synchronously. 
+            dto.FullName = $"{person.FirstName} {person.LastName}";
+         }
+     );
+}
+```
