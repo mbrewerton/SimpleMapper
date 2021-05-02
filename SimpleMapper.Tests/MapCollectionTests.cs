@@ -9,7 +9,7 @@ namespace SimpleMapper.Tests
     public class MapCollectionTests
     {
         [Fact]
-        public void Test()
+        public void MapCollection_MapsBasicClasses()
         {
             var models = new SimpleModel[]
             {
